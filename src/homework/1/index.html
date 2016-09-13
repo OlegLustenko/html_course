@@ -11,7 +11,19 @@
   <img style="width:600px; height=600px" src="http://weneedfun.com/wp-content/uploads/2016/08/Tumblr-Ocean-Backgrounds-15.jpg">
 
   <a href="https://vk.com/oleglustenko">Едем на море</a>
+  <div class="shadow"></div>
   <shadow-header></shadow-header>
+
+  <script> 
+    let link = document.querySelector('link[rel="import"]');
+    let content = link.import;
+
+    // Grab DOM from warning.html's document.
+    let el = content.querySelector('.shadow');
+
+    document.body.appendChild(el.cloneNode(true));
+
+  </script>
 </body>
 
 </html>
