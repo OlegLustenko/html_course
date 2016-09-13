@@ -19,9 +19,10 @@
     let content = link.import;
 
     // Grab DOM from warning.html's document.
-    let el = content.querySelector('.shadow');
+    let el = content.getElementById('template');
+    
 
-    document.body.appendChild(el.cloneNode(true));
+    document.querySelector('.shadow').appendChild(el.cloneNode(true));
 
   </script>
 </body>
