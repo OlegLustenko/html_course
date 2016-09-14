@@ -12,7 +12,7 @@
       createdCallback: {
         value: function() {
           var root = this.createShadowRoot();
-          var template = document.querySelector('#template');
+          var template = document.getElementById('template');
           var clone = document.importNode(template.content, true);
           root.appendChild(clone);
         }
