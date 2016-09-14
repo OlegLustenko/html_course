@@ -12,7 +12,7 @@ let XComponent = document.registerElement('shadow-header', {
       createdCallback: {
         value: function() {
           let root = this.createShadowRoot();
-          // var template = document.querySelector('#template');
+          let template = document.getElementById('template');
           let clone = document.importNode(template, true);
           root.appendChild(clone);
         }
