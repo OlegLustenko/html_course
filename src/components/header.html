@@ -7,13 +7,19 @@
 <script>
   // This element will be registered to index.html
   // Because `document` here means the one in index.html
-  var XComponent = document.registerElement('shadow-header', {
+let XComponent = document.registerElement('shadow-header', {
     prototype: Object.create(HTMLElement.prototype, {
       createdCallback: {
         value: function() {
+<<<<<<< HEAD
           var root = this.createShadowRoot();
           var template = document.getElementById('template');
           var clone = document.importNode(template.content, true);
+=======
+          let root = this.createShadowRoot();
+          let template = document.getElementById('template');
+          let clone = document.importNode(template, true);
+>>>>>>> gh-pages
           root.appendChild(clone);
         }
       }

@@ -4,14 +4,27 @@
 <head>
   <meta charset="UTF-8">
   <title>Home work 1</title>
-  <link rel="import" href='/main/ollu/index.html'>
+  <link rel="import" href='/html_course/src/components/header.html'>
 </head>
 
 <body>
-  <shadow-header></shadow-header>
   <img style="width:600px; height=600px" src="http://weneedfun.com/wp-content/uploads/2016/08/Tumblr-Ocean-Backgrounds-15.jpg">
 
   <a href="https://vk.com/oleglustenko">Едем на море</a>
+  <div class="shadow"></div>
+  <shadow-header></shadow-header>
+
+  <script> 
+    let link = document.querySelector('link[rel="import"]');
+    let content = link.import;
+
+    // Grab DOM from warning.html's document.
+    let el = content.getElementById('template');
+    
+
+    document.querySelector('.shadow').appendChild(el.cloneNode(true));
+
+  </script>
 </body>
 
 </html>
