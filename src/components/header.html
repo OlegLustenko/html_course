@@ -1,4 +1,4 @@
-<template class="template">
+<template id="template">
   <div id="container">
     <content select="h1"></content>
   </div>
@@ -12,7 +12,7 @@ let XComponent = document.registerElement('shadow-header', {
       createdCallback: {
         value: function() {
           var root = this.createShadowRoot();
-          var template = document.querySelector('template');
+          var template = document.querySelector('#template');
           console.log(template);
           console.log(document);
           var clone = document.importNode(template.content, true);
