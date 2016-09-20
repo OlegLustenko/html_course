@@ -16,11 +16,13 @@
 
   <script> 
     let link = document.querySelector('link[rel="import"]');
-    let content = link.import;
 
-    // Grab DOM from warning.html's document.
-    let el = content.getElementById('template');
-    document.querySelector('.shadow').appendChild(el.cloneNode(true));
+    link.addEventListener('load', function() {
+      let content = link.import; 
+      let el = content.getElementById('template');
+       document.querySelector('.shadow').appendChild(el.cloneNode(true));
+    })
+    
 
   </script>
 </body>
