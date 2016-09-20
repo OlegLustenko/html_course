@@ -1,4 +1,4 @@
-<template id="template">
+<template class="template">
   <div id="container">
     <content select="h1"></content>
   </div>
@@ -11,21 +11,11 @@ let XComponent = document.registerElement('shadow-header', {
     prototype: Object.create(HTMLElement.prototype, {
       createdCallback: {
         value: function() {
-<<<<<<< HEAD
-          let root = this.createShadowRoot();
-          let template = document.getElementById('template');
-          let clone = document.importNode(template, true);
-=======
-<<<<<<< HEAD
           var root = this.createShadowRoot();
-          var template = document.getElementById('template');
+          var template = document.querySelector('template');
+          console.log(template);
+          console.log(document);
           var clone = document.importNode(template.content, true);
-=======
-          let root = this.createShadowRoot();
-          let template = document.getElementById('template');
-          let clone = document.importNode(template, true);
->>>>>>> gh-pages
->>>>>>> 411dfd1d7dfa4e5c874c68da196c4c0fdac538c2
           root.appendChild(clone);
         }
       }
