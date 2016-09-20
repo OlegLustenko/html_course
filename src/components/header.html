@@ -13,7 +13,8 @@
         value: function() {
           var root = this.createShadowRoot();
           var template = document.querySelector('#template');
-          console.log(template);
+          console.log(root);
+          // console.log();
           var clone = document.importNode(template.content, true);
           root.appendChild(clone);
         }
