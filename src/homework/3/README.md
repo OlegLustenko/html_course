@@ -54,4 +54,6 @@
 
 </footer>
 ```
+![alt tag](https://raw.githubusercontent.com/OlegLustenko/html_course/gh-pages/src/homeworks/3/content/home_work.png)
+
 
