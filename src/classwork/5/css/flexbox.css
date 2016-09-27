@@ -1,0 +1,20 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu > li {
+  color: yellow;
+  justify-content: center;
+  display: flex;
+  flex: 1 1 33.3%;
+  flex-flow: row nowrap;
+  background: green;
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
+  border-right: 1px solid blue;
+}

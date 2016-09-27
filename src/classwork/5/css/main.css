@@ -7,23 +7,22 @@
 .header__menu > li {
   display: inline-block;
   text-align: center;
-  width: 33.3%;
+  width: 33.333%;
   font-size: 1rem;
+  background: green;
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
+  border-right: 1px solid blue;
 }
 
 .header__menu {
   display: block;
-  /*padding: 2rem;*/
   font-size: 0;
   color: yellow;
 }
 
-.menu__item {
+
+/*.menu__item {
   display: inline-block;
-  background: green;
-  /*border: 2px solid red;*/
-  border-top: solid red;
-  border-bottom: solid red;
-  border-right: solid blue;
-  /*font-size: 1rem;*/
-}
+  
+}*/
