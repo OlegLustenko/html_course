@@ -1,7 +1,14 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css");
 * {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+}
+
+.header__menu {
+  display: block;
+  font-size: 0;
+  color: yellow;
 }
 
 .header__menu > li {
@@ -15,14 +22,6 @@
   border-right: 1px solid blue;
 }
 
-.header__menu {
-  display: block;
-  font-size: 0;
-  color: yellow;
-}
-
-
-/*.menu__item {
+.menu__item {
   display: inline-block;
-  
-}*/
+}
