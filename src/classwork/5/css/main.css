@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.header__menu > li {
+  display: inline-block;
+  text-align: center;
+  width: 33.3%;
+  font-size: 1rem;
+}
+
+.header__menu {
+  display: block;
+  /*padding: 2rem;*/
+  font-size: 0;
+  color: yellow;
+}
+
+.menu__item {
+  display: inline-block;
+  background: green;
+  /*border: 2px solid red;*/
+  border-top: solid red;
+  border-bottom: solid red;
+  border-right: solid blue;
+  /*font-size: 1rem;*/
+}
