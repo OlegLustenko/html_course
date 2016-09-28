@@ -1,0 +1,30 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css");
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.header {
+}
+
+.header__menu{
+  display: block;
+  font-size: 0;
+  color: yellow;
+}
+
+.header__menu > li{
+  display: inline-block;
+  text-align: center;
+  width: 33.333%;
+  font-size: 1rem;
+  background: green;
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
+  border-right: 1px solid blue;
+}
+
+.menu__item {
+  display: inline-block;
+}

@@ -1,0 +1,29 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu > li {
+  color: yellow;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 33.3%;
+  flex: 1 1 33.3%;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  background: green;
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
+  border-right: 1px solid blue;
+}

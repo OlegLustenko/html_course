@@ -1,0 +1,30 @@
+.item1.color-red.color1 {
+  background: darkblue;
+}
+
+.item1 {
+  width: 100px;
+  height: 100px;
+  background: black;
+  color: wheat;
+}
+
+.colorRed {
+  background: orange;
+}
+
+.item2 {
+  width: 150px;
+  height: 150px;
+  background: purple;
+}
+
+.item3 {
+  width: 200px;
+  height: 200px;
+  background: yellow;
+}
+
+.item-selled {
+  font-size: 5vw
+}
