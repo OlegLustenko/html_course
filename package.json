@@ -9,5 +9,12 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {}
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-postcss": "*",
+    "gulp-rename": "*",
+    "normalize.css": "^4.2.0",
+    "postcss-font-magician": "^1.4.0",
+    "postcss-next": "*"
+  }
 }
