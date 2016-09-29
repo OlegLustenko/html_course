@@ -78,6 +78,7 @@
   font-size: 0;
   height: auto;
   &__content {
+    vertical-align: top;
     display: inline-block;
     border: 2px solid;
     width: 50%;
@@ -86,19 +87,18 @@
     &>h4 {
       font-size: 1.2rem;
       margin: 0;
-      color:#ccc;
+      color: #ccc;
       text-align: center;
-
     }
   }
   &__social-links {
     display: inline-block;
   }
   &__nav {
-    &__item > *{
+    &__item>* {
       font-size: 1.30rem;
       text-decoration: none;
-      color:#3F51B5;
+      color: #3F51B5;
     }
   }
 }

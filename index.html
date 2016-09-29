@@ -2,28 +2,54 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    a {
+      text-decoration: none;
+      display: block;
+    }
+    
+    .nav {
+      display: inline-block;
+    }
+    
+    .border {
+      border: 2px solid #ccc;
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-    </header>
-    <main>
-        <ul>
-            <li><a href="src/classwork/1/index.html">Class work 1 </a></li>
-            <li><a href="src/classwork/2/index.html">Class work 2 </a></li>
-            <li><a href="src/classwork/3/index.html">Class work 3 </a></li>
-        </ul>
+  <main id="nav"> </main>
+  <footer></footer>
+  <script src="https://unpkg.com/react@15.3.2/dist/react.min.js"></script>
+  <script src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.min.js"></script>
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/6.1.19/browser.js"></script>-->
+  <!--<script type="text/babel" src="src/mainpage/app.jsx"></script>-->
 
-        <ul>
-            <li><a href="src/homework/1/index.html">Home work 1 </a></li>
-            <li><a href="src/homework/2/index.html">Home work 2 </a></li>
-            <li><a href="src/homework/2/index.html">Home work 3 </a></li>
-        </ul>
-    </main>
-    <footer></footer>
+  <script>
+    let MenuItem = (route, number) => {
+      return (`<li class="nav__link">                             
+                     <a href="src/${route}/${number}/index.html">${route} #${number}</a>
+               </li>`)
+    }
 
+    let Menu = (state, lessons) => {
+      console.log(lessons, state);
+      return (`
+      <nav class="nav">
+        ${lessons.map((number)=>MenuItem(state, number)).join('')}
+      </nav>`)
+    };
+
+    let mainId = document.getElementById('nav');
+    let lessonsCount = Array.from({
+      length: 24
+    }, (_, v) => v + 1);
+    mainId.innerHTML = Menu('classwork', lessonsCount);
+    mainId.innerHTML = mainId.innerHTML + Menu('homework', lessonsCount);
+  </script>
 </body>
 
 </html>
