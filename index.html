@@ -5,35 +5,19 @@
   <meta charset="UTF-8">
   <title>Document</title>
   <style>
-    a {
-      text-decoration: none;
-      display: block;
-    }
-    
-    .nav {
-      display: inline-block;
-    }
-    
-    .border {
-      border: 2px solid #ccc;
-    }
+    a {text-decoration: none; display: block;    }
+    .nav { display: inline-block; }
   </style>
 </head>
 
 <body>
   <main id="nav"> </main>
   <footer></footer>
-  <script src="https://unpkg.com/react@15.3.2/dist/react.min.js"></script>
-  <script src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.min.js"></script>
-  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/6.1.19/browser.js"></script>-->
-  <!--<script type="text/babel" src="src/mainpage/app.jsx"></script>-->
-
   <script>
     let MenuItem = (route, number) => {
       return (`<li class="nav__link">                             
                      <a href="src/${route}/${number}/index.html">${route} #${number}</a>
-               </li>`)
-    }
+               </li>`)}
 
     let Menu = (state, lessons) => {
       console.log(lessons, state);
@@ -44,9 +28,7 @@
     };
 
     let mainId = document.getElementById('nav');
-    let lessonsCount = Array.from({
-      length: 24
-    }, (_, v) => v + 1);
+    let lessonsCount = Array.from({length: 24}, (_, v) => v + 1);
     mainId.innerHTML = Menu('classwork', lessonsCount);
     mainId.innerHTML = mainId.innerHTML + Menu('homework', lessonsCount);
   </script>
