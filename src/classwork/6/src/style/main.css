@@ -13,6 +13,7 @@ body {
   width: 73rem;
   padding: 0 1rem;
   margin: 0 auto;
+  font-size: 0;
   // background: red;
   //   font-size: 0;
 }
@@ -23,7 +24,7 @@ body {
 
 .logo {
   display: inline-block;
-  margin-right: 125px;
+  margin-right: 120px;
   margin-top: 21px;
   &__link {
     display: block;
@@ -51,22 +52,24 @@ body {
 
 .nav {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: super;
+  padding-right: 74px;
   // width: 520px;
   // width: 32.5rem;
   &__item {
     display: inline-block;
-    // vertical-align: super;
+    vertical-align: super;
     height: 0.688rem;
     opacity: 0.67;
     color: #666;
-    font-family: Open Sans serif;
+    // font-family: OpenSans sans-serif;
     font-size: 0.813rem;
+    font-size: 13px;
     font-weight: 600;
-    margin-right: 16px;
+    margin-right: 22px;
   }
   & :last-child {
-    margin-right: 74px;
+    margin-right: 0;
   }
 }
 
