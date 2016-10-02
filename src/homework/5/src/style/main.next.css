@@ -96,6 +96,7 @@
 }
 
 .footer__content {
+  vertical-align: top;
   display: inline-block;
   border: 2px solid;
   width: 50%;
@@ -116,7 +117,7 @@
 
 .footer__nav {}
 
-.footer__nav__item > * {
+.footer__nav__item>* {
   font-size: 1.30rem;
   text-decoration: none;
   color: #3F51B5;

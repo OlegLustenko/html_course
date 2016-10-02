@@ -13,7 +13,7 @@ body {
   width: 73rem;
   padding: 0 1rem;
   margin: 0 auto;
-  background: red;
+  // background: red;
   //   font-size: 0;
 }
 
@@ -23,17 +23,21 @@ body {
 
 .logo {
   display: inline-block;
+  margin-right: 125px;
+  margin-top: 21px;
   &__link {
     display: block;
     width: 210px;
     height: 36px;
     background: url("../images/logo.png") no-repeat center;
     background-size: contain;
+    // margin-right: 125px;
   }
 }
 
 .header {
-  background: #ccc;
+  background: #fff;
+  // margin-top: 37px;
   &__item {
     width: 33%;
     border: 1px solid;
@@ -47,30 +51,39 @@ body {
 
 .nav {
   display: inline-block;
+  vertical-align: middle;
+  // width: 520px;
+  // width: 32.5rem;
   &__item {
     display: inline-block;
-    font-family: Open Sans;
-    font-size: 13.2px;
-    vertical-align: super;
+    // vertical-align: super;
+    height: 0.688rem;
+    opacity: 0.67;
+    color: #666;
+    font-family: Open Sans serif;
+    font-size: 0.813rem;
+    font-weight: 600;
+    margin-right: 16px;
+  }
+  & :last-child {
+    margin-right: 74px;
   }
 }
 
-.btn-green {
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgb( 112, 113, 115);
-  background-color: rgb( 173, 209, 54);
-  opacity: 0.812;
-  position: absolute;
-  width: 98px;
-  height: 35px;
-  z-index: 180;
-  border-radius: 4rem;
-  text-align: center;
-  //   vertical-align: center;
-  line-height: 2rem;
-  color: white;
+.btn {
   text-decoration: none;
+  text-align: center;
+  border: none;
+  &.btn-green {
+    opacity: 0.812;
+    display: inline-block;
+    width: 100px;
+    height: 37px;
+    z-index: 180;
+    border-radius: 4rem;
+    vertical-align: super;
+    line-height: 2rem;
+    color: white;
+    background-color: #add136;
+  }
 }
-
-.button {}
