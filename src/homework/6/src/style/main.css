@@ -9,8 +9,8 @@ body {
 }
 
 .container {
-  //   width: 1170px;
-  width: 73rem;
+  width: 1170px;
+  // width: 73rem;
   padding: 0 1rem;
   margin: 0 auto;
   // background: red;
@@ -23,8 +23,9 @@ body {
 
 .logo {
   display: inline-block;
+  vertical-align: top;
   margin-right: 125px;
-  margin-top: 21px;
+  // margin-top: 21px;
   &__link {
     display: block;
     width: 210px;
@@ -37,35 +38,29 @@ body {
 
 .header {
   background: #fff;
-  // margin-top: 37px;
-  &__item {
-    width: 33%;
-    border: 1px solid;
-    font-size: 1rem;
-    display: inline-block;
-  }
-  &__logo {
-    padding: 0 1rem 0 1rem;
-  }
 }
 
 .nav {
   display: inline-block;
   vertical-align: middle;
-  // width: 520px;
-  // width: 32.5rem;
   &__item {
     display: inline-block;
-    // vertical-align: super;
-    height: 0.688rem;
+    // vertical-align: super; 
     opacity: 0.67;
     color: #666;
     font-family: Open Sans serif;
     font-size: 0.813rem;
     font-weight: 600;
-    margin-right: 16px;
+    padding-right: 16px;
+    padding: 1rem;
+    & a {
+      text-decoration: none;
+    }
+    &:hover {
+      background: #ccc;
+    }
   }
-  & :last-child {
+  &>:last-child {
     margin-right: 74px;
   }
 }
@@ -77,12 +72,13 @@ body {
   &.btn-green {
     opacity: 0.812;
     display: inline-block;
-    width: 100px;
-    height: 37px;
-    z-index: 180;
+    padding:1rem;
+    // width: 100px;
+    // height: 37px;
+    // z-index: 180;
     border-radius: 4rem;
-    vertical-align: super;
-    line-height: 2rem;
+    vertical-align: middle;
+    line-height: 2.2rem;
     color: white;
     background-color: #add136;
   }
