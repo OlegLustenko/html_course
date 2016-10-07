@@ -22,7 +22,7 @@
   <script>
     let MenuItem = (route, number) => {
       return (`<li class="nav__link">                             
-                     <a href="src/${route}/${number}/index.html">${route} #${number}</a>
+                     <a href="src/content/${route}/${number}/index.html">${route} #${number}</a>
                </li>`)
     }
 
@@ -35,7 +35,9 @@
     };
 
     let mainId = document.getElementById('nav');
-    let lessonsCount = Array.from({      length: 24    }, (_, v) => v + 1);
+    let lessonsCount = Array.from({
+      length: 24
+    }, (_, v) => v + 1);
     mainId.innerHTML = Menu('classwork', lessonsCount);
     mainId.innerHTML = mainId.innerHTML + Menu('homework', lessonsCount);
   </script>
