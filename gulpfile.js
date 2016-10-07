@@ -4,7 +4,7 @@ const rename = require('gulp-rename');
 const cssPath = ['./src/**/*.css', '!./src/**/*.next.css'];
 
 
-gulp.task('postcss', function () {
+gulp.task('postcss', function() {
   gulp.src(cssPath)
     .pipe(postcss([require('postcss-font-magician')(),
       require('postcss-cssnext')({ browsers: null })
@@ -16,4 +16,6 @@ gulp.task('postcss', function () {
     }));
 });
 
-gulp.task('default', ['postcss'], () => { gulp.watch(cssPath, ['postcss']); });
+gulp.task('default', ['postcss'], () => {
+  gulp.watch(cssPath, ['postcss']);
+});

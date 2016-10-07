@@ -5,19 +5,26 @@
   <meta charset="UTF-8">
   <title>html course</title>
   <style>
-    a {text-decoration: none; display: block;    }
-    .nav { display: inline-block; }
+    a {
+      text-decoration: none;
+      display: block;
+    }
+    
+    .nav {
+      display: inline-block;
+    }
   </style>
 </head>
 
 <body>
-  <main id="nav"> </main>
+  <main id="nav"></main>
   <footer></footer>
   <script>
     let MenuItem = (route, number) => {
       return (`<li class="nav__link">                             
                      <a href="src/${route}/${number}/index.html">${route} #${number}</a>
-               </li>`)}
+               </li>`)
+    }
 
     let Menu = (state, lessons) => {
       console.log(lessons, state);
@@ -28,7 +35,7 @@
     };
 
     let mainId = document.getElementById('nav');
-    let lessonsCount = Array.from({length: 24}, (_, v) => v + 1);
+    let lessonsCount = Array.from({      length: 24    }, (_, v) => v + 1);
     mainId.innerHTML = Menu('classwork', lessonsCount);
     mainId.innerHTML = mainId.innerHTML + Menu('homework', lessonsCount);
   </script>
