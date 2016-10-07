@@ -9,7 +9,7 @@ const NODE_ENV = process.env.NODE_ENV;
 let config = {
   entry: {
     app: path.resolve(__dirname, './src/index'),
-    vendor: ['react', 'redux', 'react-redux']
+    vendor: ['react', 'redux', 'react-redux', 'react-dom']
   },
   output: {
     path: path.resolve(__dirname, '../..'),
