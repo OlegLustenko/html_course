@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import style from './style.css';
-console.log(style);
+import './style.css';
+
 
 class Navigation extends Component {
   render() {
