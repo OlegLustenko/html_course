@@ -13,6 +13,10 @@
     .nav {
       display: inline-block;
     }
+    .deprecated {
+      background:#ccc;
+      list-style-type:none;
+    }
   </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 </head>
@@ -31,7 +35,7 @@
     let Menu = (state, lessons) => {
       console.log(lessons, state);
       return (`
-      <nav class="nav">
+      <nav class="nav deprecated">
         ${lessons.map((number)=>MenuItem(state, number)).join('')}
       </nav>`)
     };

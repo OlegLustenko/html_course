@@ -1,15 +1,35 @@
 import React, { Component } from 'react';
-import './style.css';
+// import './style.css';
 
+let Menu = ({ items }) => {
 
-class Navigation extends Component {
-  render() {
-    return (
-      <aside className="aside">
-        Hello Aside
-      </aside>
-    );
+  if (!items) {
+    return <div> Loading... </div>;
   }
-}
+  return (
+    <menu className="menu">
+      {items.map((link, index) => 
+       (<li className="menu__item" key={index}>
+        <a href="">{link.name}</a>
+       </li>)
+      )}
+    </menu>
+  );
+};
 
-export default Navigation;
+export default Menu;
+
+
+// class Navigation extends Component {
+//   render() {
+//     return (
+//       <aside className="aside">
+//         Hello Aside !2
+//         <menu className="menu">
+//         </menu>
+//       </aside>
+//     );
+//   }
+// }
+
+// export default Navigation;

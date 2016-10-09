@@ -21,7 +21,7 @@ let config = {
         exclude: /node_modules/,
         loader: 'babel',
         query: {
-          presets: ['react', 'es2015', 'stage-1']
+          presets: ['react', ['es2015', { 'loose': true }], 'stage-1']
         }
       },
       {
@@ -64,8 +64,6 @@ if (NODE_ENV == 'production') {
     })
   );
 }
-
-
 
 
 export default config;

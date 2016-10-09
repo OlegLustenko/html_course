@@ -13,6 +13,7 @@
   "dependencies": {
     "babel-preset-stage-1": "^6.1.18",
     "lodash": "^3.10.1",
+    "normalize.css": "^5.0.0",
     "react": "latest",
     "react-dom": "latest",
     "react-redux": "latest",
@@ -37,6 +38,7 @@
     "postcss-cssnext": "^2.8.0",
     "postcss-loader": "^0.13.0",
     "react-addons-test-utils": "^15.3.2",
+    "react-hot-loader": "^3.0.0-beta.5",
     "style-loader": "^0.13.1",
     "webpack": "^2.1.0-beta.25",
     "webpack-dev-server": "^2.1.0-beta.8"
