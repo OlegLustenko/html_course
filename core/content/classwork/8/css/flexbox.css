@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding:0;
+  padding: 0;
 }
 
 .menu {
@@ -23,4 +23,30 @@
       text-decoration: none;
     }
   }
+}
+
+.img-wrap {
+  display: flex;
+  float: right;
+  // border-radius: 5em;
+  shape-outside: circle(50%);
+  &>img {
+    width: 20em;
+    height: 20em;
+    margin: 1em 2em 1em 0;
+    border-radius: 25em;
+  }
+}
+
+.info {
+  // flex: 1 1 0;
+  flex-grow: 1;
+  flex-basis: 40%;
+  flex-wrap: wrap;
+  // width: 50%;
+  // height: 50%;
+}
+
+.content {
+  background: lawngreen;
 }

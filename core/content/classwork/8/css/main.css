@@ -16,6 +16,9 @@
     &:nth-child(odd):hover {
       background: #fff;
     }
+    &:nth-child(even):hover {
+      background: #000;
+    }
     & a {
       text-decoration: none;
     }
@@ -25,4 +28,17 @@
     display: block;
     clear: both;
   }
+}
+
+.img-wrap {
+  &>img {
+    width: 800px;
+    height: 500px;
+  }
+  float:left;
+}
+
+.content {
+  background: lawngreen;
+  // display: block;
 }

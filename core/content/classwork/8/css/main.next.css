@@ -21,6 +21,10 @@
   background: #fff;
 }
 
+.menu__item:nth-child(even):hover {
+  background: #000;
+}
+
 .menu__item a {
   text-decoration: none;
 }
@@ -29,4 +33,18 @@
   content: '';
   display: block;
   clear: both;
+}
+
+.img-wrap {
+  float:left;
+}
+
+.img-wrap>img {
+  width: 800px;
+  height: 500px;
+}
+
+.content {
+  background: lawngreen;
+  // display: block;
 }
