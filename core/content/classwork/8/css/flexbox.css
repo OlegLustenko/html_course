@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+}
+
+.menu {
+  display: flex;
+  background: #ccc;
+  &__item {
+    flex-direction: row;
+    text-align: center;
+    flex: 1 1 auto;
+    list-style: none;
+    padding: 1rem;
+    &:nth-child(odd):hover {
+      background: #fff;
+    }
+    &:nth-child(even):hover {
+      background: #fc5;
+    }
+    & a {
+      text-decoration: none;
+    }
+  }
+}

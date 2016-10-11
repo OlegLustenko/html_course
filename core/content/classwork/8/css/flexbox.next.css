@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #ccc
+}
+
+.menu__item {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  list-style: none;
+  padding: 1rem;
+}
+
+.menu__item:nth-child(odd):hover {
+  background: #fff;
+}
+
+.menu__item:nth-child(even):hover {
+  background: #fc5;
+}
+
+.menu__item a {
+  text-decoration: none;
+}

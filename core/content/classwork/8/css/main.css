@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+.menu {
+  display: block;
+  background: #ccc;
+  text-align: center;
+  &__item {
+    list-style: none;
+    padding: 1rem;
+    float: left;
+    border: 2px solid;
+    border-radius: 1rem;
+    background: aquamarine;
+    &:nth-child(odd):hover {
+      background: #fff;
+    }
+    & a {
+      text-decoration: none;
+    }
+  }
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
