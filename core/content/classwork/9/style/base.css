@@ -2,6 +2,8 @@
   --containerLayout: {
     width: 73.125rem;
     padding: 0 0.9rem 0 0.9rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -19,8 +21,6 @@ body {
 
 .container {
   @apply --containerLayout;
-  margin-left: auto;
-  margin-right: auto;
   &:after {
     content: '';
     display: table;
