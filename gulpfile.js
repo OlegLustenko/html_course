@@ -4,10 +4,10 @@ const rename = require('gulp-rename');
 const cssPath = ['./core/content/**/*.css', '!./core/content/**/*.next.css'];
 
 
-gulp.task('postcss', function() {
+gulp.task('postcss', function () {
   gulp.src(cssPath)
     .pipe(postcss([require('postcss-font-magician')(),
-      require('postcss-cssnext')({ browsers: null })
+    require('postcss-cssnext')({ browsers: null })
     ]))
     .pipe(rename({ suffix: '.next' }))
     .pipe(gulp.dest((f) => {
