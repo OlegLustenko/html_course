@@ -1,0 +1,63 @@
+@import "./global.css";
+.header {
+  &__top {
+    padding: 10px 0;
+    background: #f2f2f2;
+    &-menu {
+      &-item {
+        padding-right: 3rem;
+        &:last-child {
+          padding-right: 0;
+        }
+        &>a {
+          text-decoration: none;
+          color: #000;
+          &::after {
+            content: " ";
+            display: block;
+            height: 0.2rem;
+            background: transparent;
+            transition: background .2s linear;
+            // border-bottom: 0.12rem solid transparent;
+          }
+          &:hover:after {
+            // content: "";
+            // display: block;
+            background: #b5b5b5;
+            transition: background .2s linear;
+            // border-bottom: 0.12rem solid #b5b5b5;
+          }
+        }
+      }
+    }
+  }
+  &__middle {
+    padding: 6rem;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    & img {
+      display: flex;
+    }
+  }
+  &__bottom {
+    background-color: #0090ff;
+    &-menu {
+      &-item {
+        width: 13.9%;
+        text-align: center;
+        border-right: 1px solid #abdaff;
+        padding: 1.5rem 0;
+        &>a {
+          text-decoration: none;
+          color: #fff;
+          font-size: 14px;
+        }
+        &:last-child {
+          border-right: none;
+          text-align: right;
+        }
+      }
+    }
+  }
+}

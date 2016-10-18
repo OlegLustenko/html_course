@@ -1,0 +1,56 @@
+@import "./global.css";
+.header {
+  &__top {
+    background: #f2f2f2;
+    padding: 10px 0 10px 0;
+    &__menu {
+      &-item {
+        padding-right: 3rem;
+        &:last-child {
+          padding-right: 0;
+        }
+        &>a {
+          text-decoration: none;
+          color: #000;
+          &:hover:after {
+            content: "";
+            display: block;
+            border-bottom: 0.12rem solid #b5b5b5;
+          }
+        }
+      }
+    }
+  }
+  &__middle {
+    padding: 6rem;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    & img {
+      display: flex;
+    }
+  }
+  &__bottom {
+    background-color: #0090ff;
+    &__menu {
+      &-item {
+        // border: 1px solid #fff;
+        width: 13.9%;
+        text-align: center;
+        // float:left;
+        border-right: 1px solid #abdaff;
+        padding: 1.5rem 0 1.5rem 0;
+        &:last-child {
+          border-right:none;
+          text-align:right;
+        }
+        &>a {
+          text-decoration: none;
+          color: #fff;
+          font-family: "P T Sans";
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

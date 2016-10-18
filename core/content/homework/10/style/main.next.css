@@ -1,0 +1,64 @@
+@import "./global.css";
+.header {
+}
+.header__top{
+    background: #f2f2f2;
+    padding: 10px 0 10px 0
+}
+.header__top__menu{
+}
+.header__top__menu-item{
+    padding-right: 3rem
+}
+.header__top__menu-item:last-child{
+    padding-right: 0
+}
+.header__top__menu-item>a{
+    text-decoration: none;
+    color: #000
+}
+.header__top__menu-item>a:hover:after{
+    content: "";
+    display: block;
+    border-bottom: 1.92px solid #b5b5b5;
+    border-bottom: 0.12rem solid #b5b5b5
+}
+.header__middle{
+    padding: 6rem;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row
+}
+.header__middle img{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+.header__bottom{
+    background-color: #0090ff
+}
+.header__bottom__menu{
+}
+.header__bottom__menu-item{
+    //: 1px solid #fff;
+    width: 13.9%;
+    text-align: center;
+    //: left;
+    border-right: 1px solid #abdaff;
+    padding: 1.5rem 0 1.5rem 0
+}
+.header__bottom__menu-item:last-child{
+    border-right: none;
+    text-align: right
+}
+.header__bottom__menu-item>a{
+    text-decoration: none;
+    color: #fff;
+    font-family: "P T Sans";
+    font-size: 14px
+}

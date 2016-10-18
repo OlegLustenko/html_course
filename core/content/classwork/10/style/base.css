@@ -1,0 +1,52 @@
+  @custom-media --small-viewport (max-width: 30em);
+  @custom-media --only-medium-screen (width >=800px) and (width <=1200px);
+  @custom-media --desktop (width >=1201px) and (width <=2048px);
+   :root {
+    --containerLayout: {
+      @media (--only-medium-screen) {
+        width: 73.125rem;
+      }
+      @media (--desktop) {
+        width: 73.125rem;
+        // width: 100%;
+      }
+      @media (--small-viewport) {
+        width: 73.125rem;
+        // width: 100%;
+      }
+      padding: 0 0.9rem;
+      margin-right:auto;
+    }
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    // font-family: Arial, Helvetica, sans-serif;
+    // font-family: 'Source Sans Pro';
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    color: #000;
+    line-height: 1;
+    font-size: 0.85rem;
+  }
+  /*width: 1170px, padding-{left,right}:15px*/
+  
+  .container {
+    @apply --containerLayout;
+    &:after {
+      content: ' ';
+      display: table;
+      clear: both;
+      visibility: hidden;
+      font-size: 0;
+      width: 0;
+    }
+  }
+
+  .clearfix {
+      content:'';
+      display:table;
+      clear:both;
+  }
