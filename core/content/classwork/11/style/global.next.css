@@ -1,0 +1,29 @@
+.menu li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.logo {
+  float: left;
+  text-decoration: none
+}
+
+.logo__img {
+  width: 104px;
+  display: block;
+  height: 36px;
+  margin: 10px;
+  background-image: url('../img/logo.png');
+}
+
+.logo__text {
+  color: #000;
+}
+
+.wrap__right {
+  float: right;
+}
+
+.cart {
+  background: url('../img/cart.png')
+}
