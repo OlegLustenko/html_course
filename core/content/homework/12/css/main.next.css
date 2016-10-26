@@ -1,0 +1,86 @@
+img {
+  background-image:url('https://www.awicons.com/free-icons/download/internet-icons/emotions-2-icons-by-kirozeng/png/256/smile.png');
+  height:100%;
+  width:100%;
+  background-size:50%;
+  background-repeat:no-repeat;
+  background-position:center;
+}
+
+
+.bus {
+  width: 40rem;
+  height: 300px;
+  background: green;
+  position: relative;
+  left:0px;
+  -webkit-transition:left .2s linear;
+  transition: left .2s linear
+}
+
+
+.bus__windows {
+  position:absolute;
+  width:100%;
+  height:5rem;
+  margin:2rem 0rem;
+  //:blue;
+}
+
+
+.bus__windows-big {
+  display:inline-block;
+  width:16rem;
+  height:100%;
+  background:black;
+  //:1;
+  margin:0rem 1rem;
+}
+
+
+.bus__windows-small {
+  display:inline-block;
+  width:5rem;
+  background:black;
+  height:100%;
+  margin:0rem 1rem;
+  //:1;
+  //:1rem;
+}
+
+
+.bus__wheels {
+  position:absolute;
+  width:100%;
+  bottom:-5rem;
+  //:1rem 1rem;
+}
+
+
+.bus__wheels-right {
+  margin-right:2rem;
+  float:right;
+  background:darkslategray;
+  width:10rem;
+  height:10rem;
+  //:absolute;
+  border-radius:50%;
+}
+
+
+.bus__wheels-left {
+  margin-left:2rem;
+  float:left;
+  background:darkslategray;
+  width:10rem;
+  height:10rem;
+  //:absolute;
+  border-radius:50%;
+}
+
+
+.bus:hover {
+  left:150px;
+  -webkit-transition:left .2s linear;
+  transition:left .2s linear;
+}

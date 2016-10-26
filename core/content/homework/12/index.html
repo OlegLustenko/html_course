@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>LESSON 12</title>
+	<link rel="stylesheet" href="css/main.next.css">
+</head>
+
+<body>
+	<div class="bus">
+		<div class="bus__windows">
+			<div class="bus__windows-big"> <img src=""></div>
+			<div class="bus__windows-small"> <img src=""></div>
+			<div class="bus__windows-small"> <img src=""></div>
+			<div class="bus__windows-small"> <img src=""></div>
+		</div>
+		<div class="bus__wheels">
+			<div class="bus__wheels-left"></div>
+			<div class="bus__wheels-right"></div>
+		</div>
+	</div>
+	<script>
+		let images = document.querySelectorAll('img');
+		let url = 'https://www.awicons.com/free-icons/download/internet-icons/emotions-2-icons-by-kirozeng/png/256/smile.png';
+		let downloadingImage = new Image();
+		downloadingImage.onload = function(){
+		for(let img of images) {
+			img.style.backgroundImage = `url(${this.src})`;
+			img.style.height = `75%`;
+			img.style.width = `75%`;
+			img.style.backgroundSize = 'cover';
+			}
+		}
+		//downloadingImage.src = url;
+			
+		
+
+
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+:root {
+  --url: 'https://www.awicons.com/free-icons/download/internet-icons/emotions-2-icons-by-kirozeng/png/256/smile.png';
+  --picture {
+    background-image: linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), url(var(--url));
+    background-repeat: no-repeat, no-repeat;
+    width: 100%;
+    height: 200px;
+    background-size: 50%;
+    background-position: bottom right, left;
+  }
+}
+
+img {
+  background-image: url(var(--url));
+  height:100%;
+  width:100%;
+  background-size:50%;
+  background-repeat:no-repeat;
+  background-position:center;
+}
+
+
+.bus {
+  width: 40rem;
+  height: 300px;
+  background: green;
+  position: relative;
+  &__windows {
+    position: absolute;
+    width: 100%;
+    height: 5rem;
+    margin: 2rem 0rem;
+    // background: blue;
+    &-big {
+      display: inline-block;
+      width: 16rem;
+      height: 100%;
+      background:black;
+      // z-index: 1;
+      margin: 0rem 1rem;
+    }
+    &-small {
+      display: inline-block;
+      width: 5rem;
+      background:black;
+      height: 100%;
+      margin: 0rem 1rem;
+      // z-index: 1;
+      // margin: 1rem;
+    }
+  }
+  &__wheels {
+    position: absolute;
+    width: 100%;
+    bottom: -5rem;
+    // padding: 1rem 1rem;
+    &-right {
+      margin-right: 2rem;
+      float: right;
+      background: darkslategray;
+      width: 10rem;
+      height: 10rem;
+      // position: absolute;
+      border-radius: 50%;
+    }
+    &-left {
+      margin-left: 2rem;
+      float: left;
+      background: darkslategray;
+      width: 10rem;
+      height: 10rem;
+      // position: absolute;
+      border-radius: 50%;
+    }
+  }
+  left:0px;
+  transition: left .2s linear;
+  &:hover {
+    left: 150px;
+    transition: left .2s linear
+  }
+}
