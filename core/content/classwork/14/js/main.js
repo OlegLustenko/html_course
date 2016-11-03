@@ -42,7 +42,7 @@
 
    render(body) {
      let photos = document.getElementById('photos');
-     let x = photos.innerHTML || '';
+     let x = '';
      for (let photo of body.photos.photo) {
        if (!this.cancel) break;
 
@@ -52,7 +52,13 @@
        x += `<img src='https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}.jpg' />`
        this.picturesNumbers--
      }
-     photos.innerHTML = x;
+     if (photos.innerHTML) {
+       photos.insertAdjacentHTML('afterBegin', x);
+     } else {
+       photos.innerHTML = x;
+     }
+
+
    }
 
    search(e) {
