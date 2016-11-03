@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>lesson 14</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <h1 style="text-align:center; font-size:7em; margin:0;">FLICKER API</h1>
+  <div class="form-wrap">
+    <form class="form">
+      <fieldset>
+        <legend align="center">QUERY to Flicker</legend>
+        <input type="search" name="" class="form__input" placeholder="введите что любите">
+        <button type="submit" class="form__button">Submit</button>
+
+        <label type="checkbox" name="checkbox" for="checkbox_infinity">INFINITY PICTURES</label>
+        <input type="checkbox" placeholder="qwe" id="checkbox_infinity">
+      </fieldset>
+    </form>
+    <div class="button-groups">
+      <button type="button" class="button-loadmore">Load more 10</button>
+      <button type="button" class="button-loadmore">RESET</button>
+      <button type="button" class="button-cancel">CANCEL</button>
+    </div>
+  </div>
+
+  <div id="photos"></div>
+</body>
+<script src="js/main.js"></script>
+
+</html>

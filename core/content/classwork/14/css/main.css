@@ -1,0 +1,12 @@
+.form-wrap {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex {
+  display: flex
+}
+
+.button-groups {
+  display: flex;
+}
