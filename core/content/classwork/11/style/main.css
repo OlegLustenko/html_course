@@ -1,7 +1,7 @@
 @import "./global.next.css";
 .header {
   &__top {
-    padding: 10px 0;
+    padding: 0.5rem 0;
     background: #f2f2f2;
     &-menu {
       &-item {
@@ -18,14 +18,10 @@
             height: 0.2rem;
             background: transparent;
             transition: background .2s linear;
-            // border-bottom: 0.12rem solid transparent;
           }
-          &:hover:after {
-            // content: "";
-            // display: block;
+          &:hover::after {
             background: #b5b5b5;
             transition: background .2s linear;
-            // border-bottom: 0.12rem solid #b5b5b5;
           }
         }
       }
@@ -34,11 +30,8 @@
   &__middle {
     padding: 1rem 0;
     background: #fff;
-    // display: flex;
     flex-direction: row;
-    & img {
-      // display: flex;
-    }
+    & img {}
   }
   &__bottom {
     background-color: #0090ff;

@@ -21,7 +21,11 @@ function mapStateToProps(state) {
   }
 }
 
+let stateToProps = ({classWorks})=> {
+  return {classWorks}
+};
 
-export default connect(mapStateToProps)(Classworks)
+
+export default connect(stateToProps)(Classworks)
 
 // export default Classworks;

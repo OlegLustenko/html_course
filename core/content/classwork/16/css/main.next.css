@@ -1,0 +1,115 @@
+body {
+  height: 600px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.potato {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  position: relative;
+  background: yellow;
+  border-radius: 50%;
+  width: 25%;
+  height: 600px
+}
+
+.potato__eye {
+  position: absolute;
+  width: 100%;
+  /*height: auto;*/
+  bottom: 20rem;
+}
+
+.potato__eye-left {
+  margin-left: 10rem;
+  border-radius: 10rem;
+  height: 150px;
+  width: 150px;
+  float: left;
+  background: darkblue;
+}
+
+.potato__eye-right {
+  margin-right: 10rem;
+  border-radius: 10rem;
+  height: 150px;
+  width: 150px;
+  float: right;
+  background: darkblue;
+}
+
+.potato__mouth {
+  margin: auto;
+  height: 50px;
+  width: 350px;
+  bottom: 150px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: darkblue;
+}
+
+.block {
+}
+
+.block-red {
+  background: red;
+  width: 450px;
+  height: 450px;
+  margin: auto;
+  position: relative;
+}
+
+.hide {
+  display: none;
+}
+
+.block1 {
+  background: yellow;
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  position: absolute;
+}
+
+.block2 {
+  background: green;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  position: absolute;
+}
+
+.notification {
+  border: 2px solid
+}
+
+.notification__left {
+  border-right: 1px solid;
+  display: inline-block;
+  vertical-align: top;
+  width: 15%;
+  height: 100%;
+}
+
+.notification__right {
+  display: inline-block;
+  width: 69%;
+  vertical-align: top;
+}
+
+.notification__descr {
+}
+
+.notification__descr-logo {
+  display: inline-block;
+  text-align: center;
+}
+
+.notification__descr-text {
+  display: inline-block;
+  font-size: 2rem;
+}

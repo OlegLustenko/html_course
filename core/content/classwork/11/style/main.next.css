@@ -2,7 +2,7 @@
 .header {
 }
 .header__top{
-    padding: 10px 0;
+    padding: 0.5rem 0;
     background: #f2f2f2
 }
 .header__top-menu{
@@ -24,30 +24,22 @@
     height: 0.2rem;
     background: transparent;
     -webkit-transition: background .2s linear;
-    transition: background .2s linear;
-    //: 1.92px solid transparent;
-    //: 0.12rem solid transparent
+    transition: background .2s linear
 }
-.header__top-menu-item>a:hover:after{
-    //: "";
-    //: block;
+.header__top-menu-item>a:hover::after{
     background: #b5b5b5;
     -webkit-transition: background .2s linear;
-    transition: background .2s linear;
-    //: 1.92px solid #b5b5b5;
-    //: 0.12rem solid #b5b5b5
+    transition: background .2s linear
 }
 .header__middle{
     padding: 1rem 0;
     background: #fff;
-    //: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row
 }
 .header__middle img{
-    //: flex
 }
 .header__bottom{
     background-color: #0090ff

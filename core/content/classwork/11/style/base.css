@@ -15,7 +15,8 @@
         // width: 100%;
       }
       padding: 0 0.9rem;
-      margin-right:auto;
+      margin:auto auto;
+      // margin-left:auto;
     }
   }
   
@@ -44,9 +45,9 @@
       width: 0;
     }
   }
-
+  
   .clearfix {
-      content:'';
-      display:table;
-      clear:both;
+    content: '';
+    display: table;
+    clear: both;
   }

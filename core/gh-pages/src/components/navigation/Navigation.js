@@ -6,6 +6,8 @@ let Menu = ({ items }) => {
   if (!items) {
     return <div> Loading... </div>;
   }
+  
+  
   return (
     <menu className="menu">
       {items.map((link, index) => 

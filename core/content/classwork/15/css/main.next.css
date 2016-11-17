@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+.block {
+  float: left;
+  width: 50%;
+  height: 200px;
+  background-color: gold;
+}
+
+.block_mob {
+  background-color: darkorchid;
+}
+
+@media screen and (max-width:992px) {
+  .block {
+    float: none;
+    width: 100%
+  }
+}

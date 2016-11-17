@@ -42,7 +42,8 @@
   
   .container {
     padding: 0 0.9rem;
-    margin-right: auto
+    margin: auto auto;
+    //: auto
   }
   
   @media (min-width: 800px) and (max-width: 1200px) {
@@ -76,9 +77,9 @@
     font-size: 0;
     width: 0;
 }
-
+  
   .clearfix {
-      content:'';
-      display:table;
-      clear:both;
+    content: '';
+    display: table;
+    clear: both;
   }
