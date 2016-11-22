@@ -1,0 +1,33 @@
+:root {
+  --modus-theme: {
+    background-color: #76c7c0;
+    color: #fff!important;
+  }
+}
+
+.modus {
+  &__nav {
+    @apply --modus-theme;
+    & > *{
+      color:white;
+    }
+  }
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.theme-brend {
+  /* Base text style */
+  color: white;
+  font-family: "Open Sans";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}

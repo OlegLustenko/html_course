@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const postcss = require('gulp-postcss');
 const rename = require('gulp-rename');
-const cssPath = ['./core/content/**/*.css', '!./core/content/**/*.next.css'];
+const cssPath = ['./core/content/classwork/17/css/*.css', '!./core/content/**/*.next.css'];
 
 
 gulp.task('postcss', function () {
