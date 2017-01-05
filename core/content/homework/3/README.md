@@ -14,7 +14,7 @@
 <header class="header">
 <div class="container">
         <div class="header__center">
-            <menu class="menu header__menu j-menu">
+            <nav class="menu header__menu j-menu">
                 <li class="menu__item"><a href="#">Главная </a></li>
                 <li class="menu__item">
                     <a href="#">каталог</a>
@@ -30,7 +30,7 @@
                 <li class="menu__item"><a href="#">Оптовым покупателям </a></li>
                 <li class="menu__item"><a href="#">Оплата и доставка </a></li>
                 <li class="menu__item"><a href="#">Контакты</a></li>
-            </menu>
+            </nav>
 
         </div>
     </div>
